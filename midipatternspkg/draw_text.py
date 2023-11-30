@@ -1,12 +1,11 @@
 import pygame as pg
 from os import path
 
-rel_path = '../tile_based/snd/score1.png'
-dir_path = path.abspath(rel_path)
+
 
 # img_path = path.join(dir_path, 'img')
 
-print('dir_path', dir_path)
+
 
 
 def draw_speech_bubble(screen, text, text_colour, bg_colour, pos, size):
