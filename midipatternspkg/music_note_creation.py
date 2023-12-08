@@ -4,9 +4,9 @@ import os
 from os import path
 
 RANGE_OF_NOTES = (48, 61)
-NUMBER_OF_NOTES = 5
-def create_seq_notes(snd_path, filename):
-    notes = [note.Note(midi=random.randrange(*RANGE_OF_NOTES)) for _ in range(NUMBER_OF_NOTES)]
+
+def create_seq_notes(snd_path, filename, number_notes):
+    notes = [note.Note(midi=random.randrange(*RANGE_OF_NOTES)) for _ in range(number_notes)]
     midi_notes = [n.pitch.midi for n in notes]
     
 
@@ -26,8 +26,8 @@ def create_seq_notes(snd_path, filename):
 
     return midi_notes
 
-if __name__ == '__main__':
-    create_seq_notes()
+# if __name__ == '__main__':
+#     create_seq_notes()
 
 
 
